@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+## 欢迎来到我的博客
 
 You can use the [editor on GitHub](https://github.com/louis-gui/louis-gui.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+我发现一个好工具：[数学公式编辑器](https://latexlive.com)
 
 ### Markdown
 
