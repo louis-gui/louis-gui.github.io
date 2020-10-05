@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 我发现一个好工具：[数学公式编辑器](https://latexlive.com)
 
-![](/img/tlzkzhwo.jpg)
+![](/assets/img/tlzkzhwo.jpg)
 
 ### Markdown
 
