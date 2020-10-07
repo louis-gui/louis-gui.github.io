@@ -8,10 +8,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 我发现一个好工具：[数学公式编辑器](https://latexlive.com)
 
-![](/assets/img/tlzk.svg)
-
-![](/assets/img/tlzkzhwo.jpg)
-
 ### Markdown
 
 - Markdown 是一种很方便的排版语言。
