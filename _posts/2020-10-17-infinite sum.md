@@ -15,7 +15,7 @@ layout: post
 是几(a是常数)？
 
 哈哈想不到了吧：
-![](/assets/img/ca.svg)
+![](/assets/img/mmb.svg)
   
 实际上还有：
 ![](/assets/img/db.svg)
