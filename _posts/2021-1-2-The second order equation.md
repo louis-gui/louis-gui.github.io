@@ -1,4 +1,4 @@
 ---
 layout: post
 ---
-![](../assets/img/secondary.svg)
+![](../assets/img/second.svg)
