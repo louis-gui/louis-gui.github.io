@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <windows.h>
 #define MOVETO(x,y) printf("\033[%d;%dH", (x), (y))
-static void _SetPos(int x, int y)//�ƶ���굽X��Yλ��
+static void _SetPos(int x, int y)//ÒÆ¶¯¹â±êµ½X¡¢YÎ»ÖÃ
 {
 COORD position;
 HANDLE handle;
@@ -20,8 +20,7 @@ int main() {
         f = 1, *(p = m + *z + z[1] * W) > 0 && (C = 27);
         for (; *p && (m[i = rand() % S] || (--m[i], ++l, --f)););
         for (i = 0, *p = l; i < S; ++i % W || _cputs("|\n"))
-			_cputs(m[i]>0?m[i]-=f,"\033[0;32;32mgg\033[0;37;37m":m[i]?"\033[0;31;31mgg\033[0;37;37m":"gg");                                                                            
-    }
+                _cputs(m[i]>0?m[i]-=f,"\033[0;32;32m■■\033[0;37;37m":m[i]?"\033[0;31;31m■■\033[0;37;37m":"■■");                  }
     return 0;
 }
 
