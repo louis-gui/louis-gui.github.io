@@ -1,0 +1,43 @@
+\begin{array}{c}
+上次简略的讲了一点点黄金比，今天讲一下斐波那契兔子问题\\
+问题是这样的：现在是1月初，你有一对幼兔\\
+一对幼兔，在第二月会成长为成兔，而一对成兔，每月都会\\
+生出一对幼兔，求在年底你会有多少兔子，更一般性的\\
+求在第n月底你有几只兔子\\
+我们可以简单的定义第n月底有F_n只兔子，F_n=F_{n-1}+f_{n-2}\\
+F_1=1,F_2=1,F_3=2,F_4=3,F_5=5,F_6=8,F_7=13,\\
+F_8=21,F_9=34,F_{10}=55……\\
+最终我们观察到\frac{F_{n+1}}{F_n}\approx 1.61803\\
+所以这个数列在n很大时“是”一个等比数列，而公比q满足\\
+q^2-q-1=0,解得q=\frac{1\pm \sqrt5}2，这个时候我们发现\\
+令\alpha=\frac{1+\sqrt5}2,\beta=\frac{a-\sqrt5}2\\
+数列H_n=A\alpha^n+B\beta^n,它满足H_n=H_{n-1}+H_{n-2}\\
+\end{array}
+\begin{align}
+H_{n-1}+H_{n-2}&=(A\alpha^{n-1}+B\beta^{n-1})+(A\alpha^{n-2}+B\beta^{n-2})\\
+&=A(\alpha^{n-1}+\alpha^{n-2})+B(\beta^{n-1}+\beta^{n-2})\\
+&=A\alpha^n+B\beta^n\\
+&=H_n
+\end{align}
+\begin{array}{c}
+因此我们只需要选取A与B令H_1=F_1=1且H_2=F_2=1\\
+这意味着要求解
+\end{array}
+\begin{cases}
+A\alpha+B\beta=1\\
+A\alpha^2+B\beta^2=1\\
+\end{cases}
+根据\alpha^2=\alpha+1(\beta同理)改写第二个方程得
+\begin{cases}
+A\alpha+B\beta=1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (1)\\
+A(\alpha+1)+B(\beta+1)=1\ \ \ \ \ \ (2)\\
+\end{cases}
+\begin{array}{c}
+(2)式-(1)式得到B=-A,将B=-A代入(1)式得\\
+A=\frac1{\alpha-\beta}=\frac1{\sqrt5}\\
+从而得到了如下的通项公式：\\
+F_n=\frac{(\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)^n}{\sqrt5}\\
+很复杂，不适合计算F_{12},所以使用原方法计算\\
+\small{F_{11}=F_{10}+F_9=55+34=89,F_{12}=F_{11}+F_{10}=89+55=144}\\
+\small{因此你在年底有144只兔子，在第n月有\frac{(\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)^n}{\sqrt5}只兔子}\\
+\end{array}
