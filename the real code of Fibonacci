@@ -12,13 +12,12 @@ F_8=21,F_9=34,F_{10}=55……\\
 q^2-q-1=0,解得q=\frac{1\pm \sqrt5}2，这个时候我们发现\\
 令\alpha=\frac{1+\sqrt5}2,\beta=\frac{a-\sqrt5}2\\
 数列H_n=A\alpha^n+B\beta^n,它满足H_n=H_{n-1}+H_{n-2}\\
+\end{array}\begin{array}{c}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H_{n-1}+H_{n-2} = (A\alpha^{n-1}+B\beta^{n-1})+(A\alpha^{n-2}+B\beta^{n-2})\\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = A(\alpha^{n-1}+\alpha^{n-2})+B(\beta^{n-1}+\beta^{n-2})\\
+\ \ \ \ \ \ \ \ \ \ \ \ \  = A\alpha^n+B\beta^n\\
+ = H_n
 \end{array}
-\begin{align}
-H_{n-1}+H_{n-2}&=(A\alpha^{n-1}+B\beta^{n-1})+(A\alpha^{n-2}+B\beta^{n-2})\\
-&=A(\alpha^{n-1}+\alpha^{n-2})+B(\beta^{n-1}+\beta^{n-2})\\
-&=A\alpha^n+B\beta^n\\
-&=H_n
-\end{align}
 \begin{array}{c}
 因此我们只需要选取A与B令H_1=F_1=1且H_2=F_2=1\\
 这意味着要求解
