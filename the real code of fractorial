@@ -1,0 +1,19 @@
+\begin{array}{c}
+今天我们来讨论一下关于阶乘后的零这一问题的讨论\\
+这“也许”是道算法题，我们首先想到的就是算出n!\\
+然后看有几个0，这个想法其实是不切实际的,因为题目中\\
+明确表明了1\le n\le 10^9,因此我们的算法复杂度应约为\log n\\
+我们通过阶乘的性质，可以知道n的阶乘中能被10^m整除\\
+m=\sum\limits_{m=1}^\infty\lfloor\frac n{5^n}\rfloor,而不是m=\sum\limits_{m=1}^\infty\lfloor\frac n{10^n}\rfloor\\
+\small{但走到这里我们也经历了很长的思想历程，我们不是竖着求面积而是横着}\\
+\scriptsize{竖着求是指n!中n\ge5时m+=1,n\ge10是m+=1…n\ge25时m+=2…}\\
+\small而横着求是指第一层(\frac n5)，第二层(\frac n{25})，第三层(\frac n{125})…然后累计起来\\
+\scriptsize(你要想象如果5^m|n则\max m是在n的时候的高度，而我们的任务是求面积)\\
+我们现在已经有“线性”解法了(\log n甚至可以说O(1))\\
+设a^m|n!中m=\sum\limits_{m=1}^\infty\lfloor\frac n{k^n}\rfloor\\
+观察k，我们设a=\prod\limits_{n=1}^\infty p_n^{x_n}(|\{(y|p_n)|y\in \mathbb{Z}\}|=2)\\
+则k=\max p_n^{x_n},剩下来的就是暴力了\\
+但我们也许可以给出它的上下界(没错，上界的上下界)\\
+这里用因式分解给出其上界\sum\limits_{m=1}^\infty \frac n{5^m}=\frac n4,下界\frac n4-1
+\end{array}
+目前公式最多的一章

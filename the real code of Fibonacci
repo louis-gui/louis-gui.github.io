@@ -40,3 +40,4 @@ F_n=\frac{(\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)^n}{\sqrt5}\\
 \small{F_{11}=F_{10}+F_9=55+34=89,F_{12}=F_{11}+F_{10}=89+55=144}\\
 \small{因此你在年底有144只兔子，在第n月有\frac{(\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)^n}{\sqrt5}只兔子}\\
 \end{array}
+目前最长的一章
