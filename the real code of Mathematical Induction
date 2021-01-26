@@ -1,0 +1,16 @@
+\begin{array}{c}
+今天我们讲一下数学归纳法,数学归纳法是这样的:\\
+如果一个性质对于n成立就对n+1成立且对0(或1)成立，则对所有自然数(或正整数)成立\\
+这是皮亚诺的第五条公理\\
+好，第一个命题：使用数学归纳法证明\sum\limits_{m=1}^nm=\frac{n(n+1)}2\\
+其实还是很简单的，1=\frac{1\times 2}2=1\\
+\frac{n(n+1)}2+n+1=\frac{(n+1)(n+2)}2\\
+第二个命题：使用数学归纳法证明\sum\limits_{m=1}^nm^2=\frac{2n^3+3n^2+n}6\\
+\Tiny\frac{2n^3+3n^2+n}6+(n+1)^2=\frac{2n^3+3n^2+n}6+n^2+2n+1=\frac{2n^3+3n^2+n+6n^2+12n+6}6=\frac{2(n+1)^3+3n^2+n+6n+4}6=\frac{2(n+1)^3+3(n+1)^2+(n+1)}\\
+第三个命题：使用数学归纳法证明\sum\limits_{m=1}^nm^k=\frac n{k!}+\sum\limits_{m=2}^{k+1}\frac{n^m}m\\
+n=1时很明显咋地都行.然后，开始归纳\\
+很明显只需要证明(n+1)^k+\frac n{k!}+\sum\limits_{m=2}^{k+1}\frac{n^m}m=\frac{(n+1)}{k!}+\sum\limits_{m=2}^{k+1}\frac{(n+1)^m}m
+(n+1)^k=\frac1{k!}+\sum\limits_{m=2}^{k+1}\frac{\sum\limits_{x=0}^{m-1}C_x^mn^x}m\\
+\sum\limits_{m=1}^{k-1}C_m^kn^m=\frac1{k!}+(\sum\limits_{m=2}^{k}\frac{\sum\limits_{x=0}^{m-1}C_x^mn^x}m)+\sum\limits_{x=0}^{k-1}C_x^kn^x\\
+
+\end{array}
